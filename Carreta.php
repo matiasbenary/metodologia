@@ -7,19 +7,26 @@
  */
 require_once "ITransporte.php";
 require_once "IMercaderia.php";
+require_once "AEstrategia.php";
+require_once "EstrategiaNormal.php";
 
 class Carreta implements ITransporte
 {
-    private $capacidad,$ocupado,$almacen;
+    public $capacidad,$ocupado,$almacen;
+    protected $estrategia;
 
     /**
      * Carreta constructor.
      * @param $capacidad
      */
-    public function __construct($capacidad)
+    public function __construct($capacidad, AEstrategia $estrategia = null)
     {
+        if($estrategia == null){
+            $estrategia =  EstrategiaNormal::class;
+        }
         $this->capacidad = $capacidad;
         $this->ocupado = 0;
+        $this->estrategia = new $estrategia($this);
     }
 
     /**
@@ -51,12 +58,7 @@ class Carreta implements ITransporte
      */
     public function tenes(IMercaderia $mercaderia): bool
     {
-        foreach ($this->almacen as $key => $item){
-            if($item == $mercaderia->getPeso()){
-                return true;
-            }
-        }
-        return false;
+      return $this->estrategia->tenes($mercaderia);
     }
 
     /**
@@ -69,26 +71,11 @@ class Carreta implements ITransporte
     }
 
     /**
-     * @return int
+     * @param AEstrategia $estrategia
      */
-    public function getOcupado(): int
+    public function setEstrategia(AEstrategia $estrategia): void
     {
-        return $this->ocupado;
+        $this->estrategia = $estrategia;
     }
 
-    /**
-     * @return int
-     */
-    public function getCapacidad(): int
-    {
-        return $this->capacidad;
-    }
-
-    /**
-     * @return array
-     */
-    public function getAlmacen(): array
-    {
-        return $this->almacen;
-    }
 }

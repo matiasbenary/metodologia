@@ -16,7 +16,7 @@ require_once "MercaderPocoDeMucho.php";
 
 class Ciudad implements ILugar
 {
-    protected $nombre,$ofertas,$demandas,$mercaderContext;
+    protected $nombre,$ofertas,$demandas;
 
     /**
      * Ciudad constructor.
@@ -27,8 +27,6 @@ class Ciudad implements ILugar
         $this->nombre = $nombre;
         $this->ofertas = [];
         $this->demandas = [];
-        $this->demandas = [];
-        $this->mercaderContext = new MercaderContext(new MercaderPocoDeMucho());
     }
 
     /**
@@ -36,7 +34,18 @@ class Ciudad implements ILugar
      */
     public function comerciar(ITransporte $transporte): void
     {
-       $this->mercaderContext->aplicarPoliticas($transporte,$this->demandas,$this->ofertas);
+        foreach ($this->demandas as $key => $demanda){
+            if($transporte->tenes($demanda)){
+                $transporte->bajar($demanda);
+                unset($this->demandas[$key]);
+            }
+        }
+        foreach ($this->ofertas as $key => $oferta){
+            if($transporte->hayLugar($oferta)){
+                $transporte->subir($oferta);
+                unset($this->ofertas[$key]);
+            }
+        }
     }
 
     /**
@@ -78,14 +87,4 @@ class Ciudad implements ILugar
     {
         return $this->demandas;
     }
-
-    /**
-     * @param IPoliticasDeVentas $mercaderContext
-     */
-    public function setMercaderContext(IPoliticasDeVentas $mercaderContext): void
-    {
-        $this->mercaderContext->setStategy($mercaderContext);
-    }
-
-
 }

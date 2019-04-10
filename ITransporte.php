@@ -30,15 +30,4 @@ interface ITransporte
      */
     public function hayLugar(IMercaderia $mercaderia):bool ;
 
-    /**
-     * @return int
-     */
-    public function getOcupado(): int;
-
-
-    /**
-     * @return int
-     */
-    public function getCapacidad(): int;
-
 }
