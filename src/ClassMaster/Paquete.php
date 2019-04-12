@@ -5,17 +5,23 @@
  * Date: 03/04/19
  * Time: 10:27
  */
-require_once "IMercaderia.php";
+
+namespace Patrones\ClassMaster;
+
+use Patrones\Interfaces\IMercaderia;
 
 class Paquete implements IMercaderia
 {
+    /**
+     * @var int
+     */
     private $peso;
 
     /**
      * Paquete constructor.
-     * @param $peso
+     * @param int $peso
      */
-    public function __construct($peso)
+    public function __construct(int $peso)
     {
         $this->peso = $peso;
     }

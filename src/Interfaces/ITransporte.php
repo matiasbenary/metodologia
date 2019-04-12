@@ -6,6 +6,8 @@
  * Time: 10:39
  */
 
+namespace Patrones\Interfaces;
+
 interface ITransporte
 {
     /**
@@ -29,16 +31,5 @@ interface ITransporte
      * @return bool
      */
     public function hayLugar(IMercaderia $mercaderia):bool ;
-
-    /**
-     * @return int
-     */
-    public function getOcupado(): int;
-
-
-    /**
-     * @return int
-     */
-    public function getCapacidad(): int;
 
 }

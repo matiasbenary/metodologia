@@ -9,5 +9,8 @@
             "email": "matiasbenary@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+      "psr-4": { "Patrones\\": "src/" }
+    }
 }

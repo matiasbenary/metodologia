@@ -5,21 +5,32 @@
  * Date: 03/04/19
  * Time: 10:41
  */
-require_once "ITransporte.php";
-require_once "IMercaderia.php";
+
+namespace Patrones\ClassMaster;
+
+use Patrones\Interfaces\IMercaderia;
+use Patrones\ClassMaster\EstrategiaNormal;
+use Patrones\AbstractClass\AEstrategiaCarreta;
+use Patrones\Interfaces\ITransporte;
 
 class Carreta implements ITransporte
 {
-    private $capacidad,$ocupado,$almacen;
+    public $capacidad,$ocupado,$almacen;
+    protected $estrategia;
 
     /**
      * Carreta constructor.
      * @param $capacidad
      */
-    public function __construct($capacidad)
+    public function __construct($capacidad, AEstrategiaCarreta $estrategia = null)
     {
+        if($estrategia == null){
+            $estrategia = EstrategiaPocoDeMuchoSinItem::class;
+        }
+
         $this->capacidad = $capacidad;
         $this->ocupado = 0;
+        $this->estrategia = new $estrategia($this);
     }
 
     /**
@@ -51,12 +62,7 @@ class Carreta implements ITransporte
      */
     public function tenes(IMercaderia $mercaderia): bool
     {
-        foreach ($this->almacen as $key => $item){
-            if($item == $mercaderia->getPeso()){
-                return true;
-            }
-        }
-        return false;
+        return $this->estrategia->tenes($mercaderia);
     }
 
     /**
@@ -65,30 +71,13 @@ class Carreta implements ITransporte
      */
     public function hayLugar(IMercaderia $mercaderia): bool
     {
-       return ($this->capacidad >= $this->ocupado+$mercaderia->getPeso());
+       return  $this->estrategia->hayLugar($mercaderia);
     }
 
     /**
-     * @return int
+     * @param AEstrategiaCarreta $estrategia
      */
-    public function getOcupado(): int
-    {
-        return $this->ocupado;
-    }
-
-    /**
-     * @return int
-     */
-    public function getCapacidad(): int
-    {
-        return $this->capacidad;
-    }
-
-    /**
-     * @return array
-     */
-    public function getAlmacen(): array
-    {
-        return $this->almacen;
+    public function setEstrategia(AEstrategiaCarreta $estrategia){
+        $this->estrategia = $estrategia;
     }
 }

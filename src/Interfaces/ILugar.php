@@ -6,6 +6,8 @@
  * Time: 11:28
  */
 
+namespace Patrones\Interfaces;
+
 interface ILugar
 {
     /**

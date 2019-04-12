@@ -6,12 +6,11 @@
  * Time: 10:30
  */
 
-require_once "Paquete.php";
-require_once "Carreta.php";
-require_once "CarretaLlenarParaVaciar.php";
-require_once "CarretaPocoDeMucho.php";
-require_once "CarretaContext.php";
-require_once "Ciudad.php";
+require __DIR__.'/vendor/autoload.php';
+
+use Patrones\ClassMaster\Carreta;
+use Patrones\ClassMaster\Ciudad;
+use Patrones\ClassMaster\Paquete;
 
 $paquetesLivianos = [];
 $paquetesPesados = [];
@@ -35,11 +34,11 @@ $ciudad->ofertar(new Paquete(1));
 $ciudad->demandar(new Paquete(31));
 
 //
-imprimir($carreta->getOcupado());
+//imprimir($carreta->getOcupado());
 imprimir($ciudad->getDemandas());
 imprimir($ciudad->getOfertas());
 $ciudad->comerciar($carreta);
-imprimir($carreta->getOcupado());
+//imprimir($carreta->getOcupado());
 imprimir($ciudad->getDemandas());
 imprimir($ciudad->getOfertas());
 

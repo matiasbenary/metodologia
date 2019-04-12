@@ -6,29 +6,38 @@
  * Time: 11:32
  */
 
-require_once "ITransporte.php";
-require_once "IMercaderia.php";
-require_once "ILugar.php";
-require_once "MercaderContext.php";
-require_once "Mercader.php";
-require_once "MercaderLlenarParaVaciar.php";
-require_once "MercaderPocoDeMucho.php";
+namespace Patrones\ClassMaster;
+
+use Patrones\Interfaces\ITransporte;
+use Patrones\Interfaces\IMercaderia;
+use Patrones\Interfaces\ILugar;
 
 class Ciudad implements ILugar
 {
-    protected $nombre,$ofertas,$demandas,$mercaderContext;
+    /**
+     * @var String
+     */
+    protected $nombre;
+
+    /**
+     * @var array
+     */
+    protected $ofertas;
+
+    /**
+     * @var array
+     */
+    protected $demandas;
 
     /**
      * Ciudad constructor.
-     * @param $nombre
+     * @param String $nombre
      */
-    public function __construct($nombre)
+    public function __construct(String $nombre)
     {
         $this->nombre = $nombre;
         $this->ofertas = [];
         $this->demandas = [];
-        $this->demandas = [];
-        $this->mercaderContext = new MercaderContext(new MercaderPocoDeMucho());
     }
 
     /**
@@ -36,7 +45,18 @@ class Ciudad implements ILugar
      */
     public function comerciar(ITransporte $transporte): void
     {
-       $this->mercaderContext->aplicarPoliticas($transporte,$this->demandas,$this->ofertas);
+        foreach ($this->demandas as $key => $demanda){
+            if($transporte->tenes($demanda)){
+                $transporte->bajar($demanda);
+                unset($this->demandas[$key]);
+            }
+        }
+        foreach ($this->ofertas as $key => $oferta){
+            if($transporte->hayLugar($oferta)){
+                $transporte->subir($oferta);
+                unset($this->ofertas[$key]);
+            }
+        }
     }
 
     /**
@@ -78,14 +98,5 @@ class Ciudad implements ILugar
     {
         return $this->demandas;
     }
-
-    /**
-     * @param IPoliticasDeVentas $mercaderContext
-     */
-    public function setMercaderContext(IPoliticasDeVentas $mercaderContext): void
-    {
-        $this->mercaderContext->setStategy($mercaderContext);
-    }
-
 
 }

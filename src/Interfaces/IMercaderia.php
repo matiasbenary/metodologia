@@ -6,6 +6,8 @@
  * Time: 10:21
  */
 
+namespace Patrones\Interfaces;
+
 interface IMercaderia
 {
     /**
