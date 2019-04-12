@@ -1,0 +1,783 @@
+Array
+(
+    [0] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Troya
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 18
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 12
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [1] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Roma
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 12
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 36
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [2] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Babilonia
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 26
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 35
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [3] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Alexandría
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 3
+                                                )
+
+                                            [1] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 50
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 29
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [4] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Nazaret
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 27
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 22
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [5] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Menfis
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 44
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 16
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [6] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Atenas
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 47
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 18
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [7] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Cartago
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 5
+                                                )
+
+                                            [1] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 41
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 30
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [8] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Damasco
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 46
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 15
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [9] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Jericó
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 37
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 19
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [10] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Constantinopla
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 19
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [11] => Patrones\ClassMaster\Ciudad Object
+        (
+            [nombre:protected] => Esparta
+            [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+                (
+                    [mercados:protected] => Array
+                        (
+                            [0] => Patrones\ClassMaster\Mercado Object
+                                (
+                                    [ofertas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 48
+                                                )
+
+                                        )
+
+                                    [demandas:protected] => Array
+                                        (
+                                            [0] => Patrones\ClassMaster\Paquete Object
+                                                (
+                                                    [peso:Patrones\ClassMaster\Paquete:private] => 28
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+++++++++++++++++++++++++++
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Troya
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 12
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Roma
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 36
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Babilonia
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 35
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Alexandría
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 29
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Nazaret
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 22
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Menfis
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 16
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Atenas
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Cartago
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 30
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Damasco
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 15
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Jericó
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 19
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Constantinopla
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 1
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+Patrones\ClassMaster\Ciudad Object
+(
+    [nombre:protected] => Esparta
+    [mercados:protected] => Patrones\ClassMaster\MercadoCompuesto Object
+        (
+            [mercados:protected] => Array
+                (
+                    [0] => Patrones\ClassMaster\Mercado Object
+                        (
+                            [ofertas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 48
+                                        )
+
+                                )
+
+                            [demandas:protected] => Array
+                                (
+                                    [0] => Patrones\ClassMaster\Paquete Object
+                                        (
+                                            [peso:Patrones\ClassMaster\Paquete:private] => 28
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

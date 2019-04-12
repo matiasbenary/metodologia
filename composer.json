@@ -11,6 +11,9 @@
     ],
     "require": {},
     "autoload": {
-      "psr-4": { "Patrones\\": "src/" }
+        "psr-4": {
+            "Patrones\\": "src/"
+        },
+        "files": ["src/helpers.php"]
     }
 }

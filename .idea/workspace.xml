@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef03b34-20d6-462e-8bbd-575483a62ef5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ClassMaster/Mercado.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassMaster/MercadoCompuesto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/IMercado.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generarCiudades.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DB/Ciudades.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DB/Ciudades.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassMaster/Carreta.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassMaster/Carreta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClassMaster/Ciudad.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassMaster/Ciudad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarComprar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarComprar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarVender.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarVender.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,52 +23,72 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-733123115">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
-          <entry key="project.open.time.0" value="5" />
+          <entry key="project.closed" value="40" />
+          <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="7" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="6" />
-          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.4" value="7" />
+          <entry key="project.open.time.5" value="9" />
           <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="34" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="4" />
-          <entry key="php" value="103" />
+          <entry key="Ciudades" value="1" />
+          <entry key="generarCiudades" value="1" />
+          <entry key="json" value="8" />
+          <entry key="php" value="129" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="4" />
-          <entry key="PHP" value="103" />
+          <entry key="JSON" value="8" />
+          <entry key="PHP" value="129" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Ciudades" value="12" />
           <entry key="dummy" value="42" />
-          <entry key="json" value="27" />
-          <entry key="php" value="5480" />
-          <entry key="txt" value="4" />
+          <entry key="json" value="101" />
+          <entry key="php" value="6820" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="27" />
-          <entry key="PHP" value="5480" />
-          <entry key="PLAIN_TEXT" value="46" />
+          <entry key="JSON" value="101" />
+          <entry key="PHP" value="6820" />
+          <entry key="PLAIN_TEXT" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="22" />
+          <entry key="PHP Class.type" value="24" />
           <entry key="PHP Interface.type" value="5" />
         </counts>
       </usages-collector>
@@ -78,58 +102,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarComprar.php">
+        <entry file="file://$PROJECT_DIR$/test2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-              <folding>
-                <element signature="e#122#165#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="112">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/ILugar.php">
+        <entry file="file://$PROJECT_DIR$/test2Carreta.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="32" column="1" selection-start-line="11" selection-end-line="32" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ClassMaster/Ciudad.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="e#121#155#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ClassMaster/MercadoCompuesto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-              <folding>
-                <element signature="e#122#156#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ClassMaster/Mercado.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#122#156#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-5820">
+              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -137,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ClassMaster/Carreta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding>
                 <element signature="e#121#157#0#PHP" expanded="true" />
               </folding>
@@ -147,46 +132,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="38" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarVender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding>
-                <element signature="e#122#168#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="318">
+              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaPocoDeMuchoSinItem.php">
+        <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarComprar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="34" />
-              <folding>
-                <element signature="e#122#168#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="174">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/generarCiudades.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="699">
+              <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaPocoDeMuchoConItem.php">
+        <entry file="file://$PROJECT_DIR$/src/DB/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#122#168#0#PHP" expanded="true" />
-              </folding>
+            <state>
+              <caret column="5" selection-end-column="231" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DB/ciudades.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="62" selection-start-column="62" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DB/Ciudades.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="231" selection-start-column="231" selection-end-column="231" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ClassMaster/Ciudad.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -198,6 +201,7 @@
       <find>/</find>
       <find>limiteDePeso</find>
       <find>porcentajeCarreta</find>
+      <find>++</find>
     </findStrings>
     <replaceStrings>
       <replace>\</replace>
@@ -210,14 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ILugar.php" />
-        <option value="$PROJECT_DIR$/IMercaderia.php" />
-        <option value="$PROJECT_DIR$/Paquete.php" />
-        <option value="$PROJECT_DIR$/PoliticaDeVenta.php" />
-        <option value="$PROJECT_DIR$/CarretaStrategy.php" />
-        <option value="$PROJECT_DIR$/CarreteraContext.php" />
-        <option value="$PROJECT_DIR$/CarretaPocoDeMucho.php" />
-        <option value="$PROJECT_DIR$/CarretaLlenarParaVaciar.php" />
         <option value="$PROJECT_DIR$/CarretaContext.php" />
         <option value="$PROJECT_DIR$/mercader.php" />
         <option value="$PROJECT_DIR$/IPoliticasDeVentas.php" />
@@ -230,7 +226,6 @@
         <option value="$PROJECT_DIR$/Carreta.php" />
         <option value="$PROJECT_DIR$/EstrategiaNormal.php" />
         <option value="$PROJECT_DIR$/Ciudad.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Interfases.php" />
         <option value="$PROJECT_DIR$/src/Interfaces/Itransporte.php" />
         <option value="$PROJECT_DIR$/src/Interfaces/ILugar.php" />
@@ -242,7 +237,6 @@
         <option value="$PROJECT_DIR$/src/ClassMaster/MercaderContext.php" />
         <option value="$PROJECT_DIR$/src/ClassMaster/MercaderLlenarParaVaciar.php" />
         <option value="$PROJECT_DIR$/src/ClassMaster/MercaderPocoDeMucho.php" />
-        <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaNormal.php" />
         <option value="$PROJECT_DIR$/src/Interfaces/IPoliticasDeVentas.php" />
         <option value="$PROJECT_DIR$/src/test.php" />
         <option value="$PROJECT_DIR$/src/AbstractClass/AEstrategiaCarreta.php" />
@@ -250,16 +244,27 @@
         <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciar.php" />
         <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarVacio.php" />
         <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarLleno.php" />
-        <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarComprar.php" />
         <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaPocoDeMuchoConItem.php" />
         <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaPocoDeMuchoSinItem.php" />
-        <option value="$PROJECT_DIR$/src/ClassMaster/Carreta.php" />
-        <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarVender.php" />
         <option value="$PROJECT_DIR$/src/Interfaces/IMeracado.php" />
-        <option value="$PROJECT_DIR$/src/ClassMaster/MercadoCompuesto.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/src/ClassMaster/Mercado.php" />
+        <option value="$PROJECT_DIR$/src/ClassMaster/MercadoCompuesto.php" />
+        <option value="$PROJECT_DIR$/src/DB/Ciudades" />
+        <option value="$PROJECT_DIR$/src/Helpers/TxtToJson.php" />
+        <option value="$PROJECT_DIR$/src/Helpers.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/DB/Ciudades.json" />
+        <option value="$PROJECT_DIR$/src/DB/Ciudades.txt" />
+        <option value="$PROJECT_DIR$/src/helpers.php" />
         <option value="$PROJECT_DIR$/src/ClassMaster/Ciudad.php" />
+        <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaNormal.php" />
+        <option value="$PROJECT_DIR$/test2.txt" />
+        <option value="$PROJECT_DIR$/test2.php" />
+        <option value="$PROJECT_DIR$/src/ClassMaster/Carreta.php" />
+        <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarComprar.php" />
+        <option value="$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarVender.php" />
+        <option value="$PROJECT_DIR$/generarCiudades.php" />
       </list>
     </option>
   </component>
@@ -278,10 +283,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-306" />
     <option name="y" value="27" />
-    <option name="width" value="1910" />
-    <option name="height" value="789" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -309,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,6 +336,12 @@
               <item name="metodologia" type="b2602c69:ProjectViewProjectNode" />
               <item name="metodologia" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="metodologia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="metodologia" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -341,7 +352,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,6 +360,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -415,18 +426,27 @@
       <workItem from="1555026576085" duration="1806000" />
       <workItem from="1555032379219" duration="1792000" />
       <workItem from="1555034193519" duration="1796000" />
-      <workItem from="1555036002945" duration="942000" />
+      <workItem from="1555036002945" duration="1793000" />
+      <workItem from="1555037809252" duration="72000" />
+      <workItem from="1555086174955" duration="1770000" />
+      <workItem from="1555087978197" duration="599000" />
+      <workItem from="1555090958761" duration="173000" />
+      <workItem from="1555092830277" duration="131000" />
+      <workItem from="1555092978817" duration="1770000" />
+      <workItem from="1555094791158" duration="1792000" />
+      <workItem from="1555096598219" duration="1792000" />
+      <workItem from="1555098405364" duration="757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49851000" />
+    <option name="totallyTimeSpent" value="59558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36912394" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4113248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -444,7 +464,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32959402" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,12 +474,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PoliticaDeVenta.php" />
-    <entry file="file://$PROJECT_DIR$/CarretaStrategy.php" />
-    <entry file="file://$PROJECT_DIR$/ILugar.php" />
-    <entry file="file://$PROJECT_DIR$/CarretaContext.php" />
-    <entry file="file://$PROJECT_DIR$/CarretaLlenarParaVaciar.php" />
-    <entry file="file://$PROJECT_DIR$/CarretaPocoDeMucho.php" />
     <entry file="file://$PROJECT_DIR$/MercaderContext.php" />
     <entry file="file://$PROJECT_DIR$/MercaderPocoDeMucho.php" />
     <entry file="file://$PROJECT_DIR$/IPoliticasDeVentas.php" />
@@ -472,9 +486,6 @@
     <entry file="file://$PROJECT_DIR$/Mercader.php" />
     <entry file="file://$PROJECT_DIR$/ITransporte.php" />
     <entry file="file://$PROJECT_DIR$/IMercaderia.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfases.php" />
     <entry file="file://$PROJECT_DIR$/src/Interfaces/Itransporte.php" />
     <entry file="file://$PROJECT_DIR$/src/Interfaces/IPoliticasDeVentas.php" />
@@ -496,37 +507,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/IMercaderia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AbstractClass/AEstrategiaCarreta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="e#123#156#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaNormal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" selection-start-line="16" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="e#121#167#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,16 +521,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarComprar.php">
+    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaPocoDeMuchoConItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="e#122#165#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3360">
+          <caret line="218" column="20" selection-start-line="218" selection-start-column="20" selection-end-line="218" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Helpers/TxtToJson.php" />
     <entry file="file://$PROJECT_DIR$/src/Interfaces/ILugar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -554,80 +557,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaPocoDeMuchoSinItem.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#122#168#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="256">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaPocoDeMuchoConItem.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#122#168#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="1968">
+          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarVender.php">
+    <entry file="file://$PROJECT_DIR$/generarCiudades" />
+    <entry file="file://$PROJECT_DIR$/src/ClassMaster/Mercado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="e#122#168#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="400">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassMaster/MercadoCompuesto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="38" selection-end-column="34" />
+        <state relative-caret-position="544">
+          <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7024">
+          <caret line="439" column="9" selection-start-line="439" selection-start-column="9" selection-end-line="439" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaPocoDeMuchoSinItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/IMercaderia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaNormal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/Ciudades.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClassMaster/Ciudad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/Ciudades.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="231" selection-start-column="231" selection-end-column="231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/ciudades.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="62" selection-start-column="62" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-end-column="231" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClassMaster/Carreta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding>
             <element signature="e#121#157#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassMaster/Mercado.php">
+    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarComprar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#122#156#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="174">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassMaster/MercadoCompuesto.php">
+    <entry file="file://$PROJECT_DIR$/src/ClassMaster/EstrategiaLlenarParaVaciarVender.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-          <folding>
-            <element signature="e#122#156#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="318">
+          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClassMaster/Ciudad.php">
+    <entry file="file://$PROJECT_DIR$/test2Carreta.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="e#121#155#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="-5820">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generarCiudades.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
         </state>
       </provider>
     </entry>

@@ -42,7 +42,7 @@ class EstrategiaLlenarParaVaciarVender extends AEstrategiaCarreta
     public function tenes(IMercaderia $mercaderia): bool
     {
         $hay = false;
-
+        $this->setPorcentajeTransporte();
         foreach ($this->carreta->almacen as $key => $item){
             if($item == $mercaderia->getPeso()){
                 $hay = true;

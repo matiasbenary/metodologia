@@ -52,10 +52,13 @@ class EstrategiaLlenarParaVaciarComprar extends AEstrategiaCarreta
     public function hayLugar(IMercaderia $mercaderia): bool
     {
         $hayLugar = $this->carreta->capacidad >= $this->carreta->ocupado+$mercaderia->getPeso();
-
-        if($hayLugar && $this->porcentajeTransporte >= 95){
-            $this->carreta->setEstrategia(new EstrategiaLlenarParaVaciarVender($this->carreta));
-            return false;
+        if($hayLugar ){
+            $this->setPorcentajeTransporte();
+            if($this->porcentajeTransporte >= 95) {
+                print_r("no");
+                $this->carreta->setEstrategia(new EstrategiaLlenarParaVaciarVender($this->carreta));
+                return false;
+            }
         }
 
         return $hayLugar;
@@ -66,7 +69,7 @@ class EstrategiaLlenarParaVaciarComprar extends AEstrategiaCarreta
      */
     private function setConstantePorcentajePeso()
     {
-        $this->constantePorcentajePeso = floor(100/$this->carreta->capacidad);
+        $this->constantePorcentajePeso = 100/$this->carreta->capacidad;
     }
 
     /**

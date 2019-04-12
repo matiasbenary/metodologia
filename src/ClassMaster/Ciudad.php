@@ -72,5 +72,4 @@ class Ciudad implements ILugar
     {
         $this->mercados [] = $meracado;
     }
-
 }
