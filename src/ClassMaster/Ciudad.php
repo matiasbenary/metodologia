@@ -8,6 +8,7 @@
 
 namespace Patrones\ClassMaster;
 
+use Patrones\Interfaces\IMercado;
 use Patrones\Interfaces\ITransporte;
 use Patrones\Interfaces\IMercaderia;
 use Patrones\Interfaces\ILugar;
@@ -19,25 +20,20 @@ class Ciudad implements ILugar
      */
     protected $nombre;
 
-    /**
-     * @var array
-     */
-    protected $ofertas;
-
-    /**
-     * @var array
-     */
-    protected $demandas;
+    protected $mercados;
 
     /**
      * Ciudad constructor.
      * @param String $nombre
      */
-    public function __construct(String $nombre)
+    public function __construct(String $nombre, IMercado $mercados = null)
     {
+        if($mercados == null){
+            $mercados = new MercadoCompuesto();
+        }
+
         $this->nombre = $nombre;
-        $this->ofertas = [];
-        $this->demandas = [];
+        $this->mercados = $mercados;
     }
 
     /**
@@ -45,18 +41,7 @@ class Ciudad implements ILugar
      */
     public function comerciar(ITransporte $transporte): void
     {
-        foreach ($this->demandas as $key => $demanda){
-            if($transporte->tenes($demanda)){
-                $transporte->bajar($demanda);
-                unset($this->demandas[$key]);
-            }
-        }
-        foreach ($this->ofertas as $key => $oferta){
-            if($transporte->hayLugar($oferta)){
-                $transporte->subir($oferta);
-                unset($this->ofertas[$key]);
-            }
-        }
+        $this->mercados->comerciar($transporte);
     }
 
     /**
@@ -64,7 +49,7 @@ class Ciudad implements ILugar
      */
     public function ofertar(IMercaderia $mercaderia): void
     {
-        $this->ofertas [] = $mercaderia;
+        $this->mercados->ofertar($mercaderia);
     }
 
     /**
@@ -72,7 +57,7 @@ class Ciudad implements ILugar
      */
     public function demandar(IMercaderia $mercaderia): void
     {
-        $this->demandas [] = $mercaderia;
+        $this->mercados->demandar($mercaderia);
     }
 
     /**
@@ -83,20 +68,9 @@ class Ciudad implements ILugar
         $this->nombre;
     }
 
-    /**
-     * @return array
-     */
-    public function getOfertas(): array
+    public function addMercado(IMercado $meracado): void
     {
-        return $this->ofertas;
-    }
-
-    /**
-     * @return array
-     */
-    public function getDemandas(): array
-    {
-        return $this->demandas;
+        $this->mercados [] = $meracado;
     }
 
 }

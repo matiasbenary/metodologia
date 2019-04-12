@@ -35,12 +35,12 @@ $ciudad->demandar(new Paquete(31));
 
 //
 //imprimir($carreta->getOcupado());
-imprimir($ciudad->getDemandas());
-imprimir($ciudad->getOfertas());
+//imprimir($ciudad->getDemandas());
+//imprimir($ciudad->getOfertas());
 $ciudad->comerciar($carreta);
 //imprimir($carreta->getOcupado());
-imprimir($ciudad->getDemandas());
-imprimir($ciudad->getOfertas());
+//imprimir($ciudad->getDemandas());
+//imprimir($ciudad->getOfertas());
 
 
 

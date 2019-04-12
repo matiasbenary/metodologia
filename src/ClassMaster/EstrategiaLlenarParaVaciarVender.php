@@ -14,8 +14,6 @@ use Patrones\Interfaces\IMercaderia;
 
 class EstrategiaLlenarParaVaciarVender extends AEstrategiaCarreta
 {
-
-
     /**
      * @var
      */
