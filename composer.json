@@ -9,7 +9,9 @@
             "email": "matiasbenary@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "league/climate": "^3.5"
+    },
     "autoload": {
         "psr-4": {
             "Patrones\\": "src/"

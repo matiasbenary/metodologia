@@ -55,7 +55,6 @@ class EstrategiaLlenarParaVaciarComprar extends AEstrategiaCarreta
         if($hayLugar ){
             $this->setPorcentajeTransporte();
             if($this->porcentajeTransporte >= 95) {
-                print_r("no");
                 $this->carreta->setEstrategia(new EstrategiaLlenarParaVaciarVender($this->carreta));
                 return false;
             }

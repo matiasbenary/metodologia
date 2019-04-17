@@ -25,7 +25,7 @@ class Carreta implements ITransporte
     public function __construct($capacidad, AEstrategiaCarreta $estrategia = null)
     {
         if($estrategia == null){
-            $estrategia = EstrategiaLlenarParaVaciarComprar::class;
+            $estrategia = EstrategiaPocoDeMuchoSinItem::class;
         }
 
         $this->capacidad = $capacidad;

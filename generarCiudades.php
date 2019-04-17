@@ -35,6 +35,7 @@ function crearCiudades($nombre,$mercados)
 function crearMercados()
 {
   $mercado = new \Patrones\ClassMaster\Mercado(generarPaquetes(),generarPaquetes());
+  print_r($mercado);
   $mercados = new \Patrones\ClassMaster\MercadoCompuesto([$mercado]);
 
   return $mercados;
@@ -47,7 +48,7 @@ function generarPaquetes()
     $i = 0;
     while($i < 98){
         $i = (random_int(0,99));
-        $paquetes[] = new \Patrones\ClassMaster\Paquete(random_int(1,5));
+        $paquetes[] = new \Patrones\ClassMaster\Paquete(random_int(15,50));
     }
 
     return $paquetes;

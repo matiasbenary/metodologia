@@ -12,18 +12,20 @@ namespace Patrones\ClassMaster;
 use Patrones\Interfaces\IMercado;
 use Patrones\Interfaces\IMercaderia;
 use Patrones\Interfaces\ITransporte;
+use Patrones\ClassMaster\EstadoCerrado;
 
 class Mercado implements IMercado
 {
+    protected $estado;
     /**
      * @var array
      */
-    protected $ofertas;
+    public $ofertas;
 
     /**
      * @var array
      */
-    protected $demandas;
+    public $demandas;
 
     /**
      * Mercado constructor.
@@ -34,6 +36,7 @@ class Mercado implements IMercado
     {
         $this->ofertas = $ofertas;
         $this->demandas = $demandas;
+        $this->estado = new EstadoCerrado($this);
     }
 
 
@@ -42,18 +45,8 @@ class Mercado implements IMercado
      */
     public function comerciar(ITransporte $transporte): void
     {
-        foreach ($this->demandas as $key => $demanda){
-            if($transporte->tenes($demanda)){
-                $transporte->bajar($demanda);
-                unset($this->demandas[$key]);
-            }
-        }
-        foreach ($this->ofertas as $key => $oferta){
-            if($transporte->hayLugar($oferta)){
-                $transporte->subir($oferta);
-                unset($this->ofertas[$key]);
-            }
-        }
+        $this->setEstado();
+        $this->estado->comerciar($transporte);
     }
 
     /**
@@ -62,6 +55,7 @@ class Mercado implements IMercado
     public function ofertar(IMercaderia $mercaderia): void
     {
         $this->ofertas [] = $mercaderia;
+        $this->setEstado();
     }
 
     /**
@@ -70,5 +64,23 @@ class Mercado implements IMercado
     public function demandar(IMercaderia $mercaderia): void
     {
         $this->demandas [] = $mercaderia;
+        $this->setEstado();
+    }
+
+    public function setEstado()
+    {
+        $umbralApertura = 10;
+        $cantOfertas = count($this->ofertas);
+        $cantDemandas = count($this->demandas);
+
+        if($cantDemandas + $cantOfertas < $umbralApertura ){
+            $this->estado = new EstadoCerrado($this);
+        }elseif ($cantOfertas > 2*$cantDemandas){
+            $this->estado = new EstadoSoloCompra($this);
+        }elseif ($cantOfertas > 2*$cantDemandas){
+            $this->estado = new EstadoSoloVenta($this);
+        }else{
+            $this->estado = new EstadoAmbasActividades($this);
+        }
     }
 }

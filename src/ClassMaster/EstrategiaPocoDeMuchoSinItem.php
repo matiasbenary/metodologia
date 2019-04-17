@@ -14,6 +14,9 @@ use Patrones\Interfaces\IMercaderia;
 
 class EstrategiaPocoDeMuchoSinItem extends AEstrategiaCarreta
 {
+    /**
+     * @var int
+     */
     protected $pesoBase;
 
     /**
